@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Eco-Hub | Student Sustainability Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ecohubportal.css">
+    
+</head>
+<body>
+<header role="banner">
+        <div class="header-container">
+            <div class="logo">
+                🌱 <span>EcoHub Portal</span>
+            </div>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#map">Interactive Map</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#calculator">Footprint Calc</a></li>
+                    <li><a href="#register">Join Us</a></li>
+                    <li><a href="#media">Media</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-layout">
+        
+        <div class="content-area">
+
+            <section id="about" class="card">
+                <h2>Introduction to Eco-Hub Project</h2>
+                <h3>Building a Sustainable Campus Future</h3>
+                
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=300&auto=format&fit=crop&q=60" alt="Eco Plant" class="float-demo-img">
+                
+               
+                <p>
+                    Welcome to the <strong>Campus Student Sustainability Hub</strong>! Our mission is to promote <b>green living</b> and <i>environmental responsibility</i> across academic departments. <br>
+                    <mark>Key Priority:</mark> Reducing carbon emissions by <strong>40%</strong> over the next two academic terms.
+                </p>
+                <p style="clear: both; margin-top: 10px;">
+                    We utilize dynamic monitoring systems to track resource usage. Below is a code snippet of our logging protocol: <br>
+                </p>
+
+                <hr style="margin: 20px 0; border: 0; border-top: 1px solid var(--border-color);">
+
+                <h3>Hub Core Objectives (HTML Lists)</h3>
+                <div class="custom-list">
+                    <ol type="1">
+                        <li><strong>Energy Conservation</strong>
+                            <ul>
+                                <li>Solar Panel installation on Central Library roof.</li>
+                                <li>Automated LED lighting transitions.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Waste Management</strong>
+                            <ul>
+                                <li>Zero-waste campus composting units.</li>
+                                <li>E-waste collection drives every month.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Community Engagement</strong></li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="map" class="card">
+                <h2>Graphics Navigation & Campus Map</h2>
+                <p>Click on key points within the interactive campus layout below to view details:</p>
+                
+                <div class="image-map-container">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1000&auto=format&fit=crop&q=80" alt="Campus Aerial Map">
+                    <div class="hotspot" id="spot-solar" onclick="showLocationInfo('Solar Array', '120kW Clean solar grid powering science labs.')">Solar Grid</div>
+                    <div class="hotspot" id="spot-garden" onclick="showLocationInfo('Organic Garden', 'Student managed organic vegetable garden.')">Eco Garden</div>
+                    <div class="hotspot" id="spot-waste" onclick="showLocationInfo('Recycling Center', 'Central hub for sorting plastic, paper, and metal.')">Recycling Unit</div>
+                </div>
+            </section>
+
+            <section id="schedule" class="card">
+                <h2>Sustainability Workshop Schedule</h2>
+                <p>Structured HTML Table featuring <code>rowspan</code> and <code>colspan</code> elements:</p>
+                
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time Slot</th>
+                                <th>Event / Module</th>
+                                <th>Location</th>
+                                <th>Seats</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Monday</td>
+                                <td>09:00 AM - 11:00 AM</td>
+                                <td>Waste Sorting & Recycling Protocol</td>
+                                <td>Block A - Room 102</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>02:00 PM - 04:00 PM</td>
+                                <td>Solar Energy Maintenance</td>
+                                <td>Science Wing Lab 2</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>10:00 AM - 01:00 PM</td>
+                                <td>Organic Farming & Composting Workshop</td>
+                                <td>Campus Greenhouse</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><strong>Special Event (Friday)</strong></td>
+                                <td>Campus Cleanliness & Green Drive</td>
+                                <td>Main Quadrangle</td>
+                                <td>Unlimited</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="register" class="card">
+                <h2>Volunteer Registration & Feedback Form</h2>
+                <p>Incorporating standard and new <strong>HTML5 Input Types</strong> with client-side JavaScript DOM validation:</p>
+                
+                <form id="ecoForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="studentName">Full Name *</label>
+                            <input type="text" id="studentName" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="studentEmail">Email Address *</label>
+                            <input type="email" id="studentEmail" required placeholder="student@campus.edu">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="studentPass">Portal Password *</label>
+                            <input type="password" id="studentPass" required placeholder="••••••••">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="studentAge">Age</label>
+                            <input type="number" id="studentAge" min="16" max="60" value="20">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="joinDate">Preferred Start Date</label>
+                            <input type="date" id="joinDate">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="commitmentLevel">Weekly Commitment (Hours): <span id="rangeVal">5</span></label>
+                            <input type="range" id="commitmentLevel" min="1" max="20" value="5" oninput="updateRangeLabel(this.value)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="badgeColor">Preferred Badge Color</label>
+                            <input type="color" id="badgeColor" value="#2e7d32">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skillsSearch">Search Required Skills</label>
+                            <input type="search" id="skillsSearch" placeholder="e.g., Gardening, Solar">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="portfolioUrl">Personal Portfolio / LinkedIn URL</label>
+                            <input type="url" id="portfolioUrl" placeholder="https://example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <select id="department">
+                                <option value="cs">Computer Science & IT</option>
+                                <option value="eng">Engineering</option>
+                                <option value="bio">Biological Sciences</option>
+                                <option value="biz">Business Administration</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Membership Type:</label>
+                        <div style="display: flex; gap: 15px; margin-top: 5px;">
+                            <label style="font-weight: normal;"><input type="radio" name="memberType" value="active" checked> Active Volunteer</label>
+                            <label style="font-weight: normal;"><input type="radio" name="memberType" value="passive"> Silent Supporter</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interests:</label>
+                        <div style="display: flex; gap: 15px; margin-top: 5px; flex-wrap: wrap;">
+                            <label style="font-weight: normal;"><input type="checkbox" name="interest" value="recycling"> Recycling</label>
+                            <label style="font-weight: normal;"><input type="checkbox" name="interest" value="gardening"> Gardening</label>
+                            <label style="font-weight: normal;"><input type="checkbox" name="interest" value="energy"> Energy Audits</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="comments">Why do you want to join?</label>
+                        <textarea id="comments" rows="3" placeholder="Share your motivation..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Submit Application</button>
+                    <button type="button" class="btn" style="background-color: #757575;" onclick="triggerDialogs()">Test JS Dialogs</button>
+                </form>
+            </section>
+
+            <section id="media" class="card">
+                <h2> Media & Dynamic Frames</h2>
+                <h3>HTML5 Audio & Video Integration</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 15px;">
+                    <div>
+                        <h4>Eco-Hub Podcast Segment (Audio)</h4>
+                        <audio controls style="width: 100%; margin-top: 10px;">
+                            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div>
+                        <h4>Sustainability Overview (Video)</h4>
+                        <video controls width="100%" style="border-radius: 5px; margin-top: 10px;">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 25px;">External Document Integration (IFrame)</h3>
+                <p>Embedding external resources seamlessly using <code>&lt;iframe&gt;</code>:</p>
+                <div style="margin-top: 10px;">
+                    <iframe src="https://wikipedia.org/wiki/Sustainability" title="Sustainability Wiki" style="width: 100%; height: 250px; border: 1px solid var(--border-color); border-radius: 5px;"></iframe>
+                </div>
+            </section>
+
+        </div>
+
+        <aside class="sidebar-area">
+            
+            <div id="calculator" class="card">
+                <h3>JavaScript Calculator</h3>
+                <p>Calculate your daily personal carbon impact:</p>
+                
+                <div class="form-group" style="margin-top: 10px;">
+                    <label for="commute">Daily Commute (km):</label>
+                    <input type="number" id="commute" value="10" min="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="plastic">Plastic Bottles Used / Day:</label>
+                    <input type="number" id="plastic" value="2" min="0">
+                </div>
+
+                <button class="btn" style="width: 100%;" onclick="calculateFootprint()">Calculate Impact</button>
+
+                <div id="calcResult" class="widget-box" style="display: none;">
+                    <strong>Estimated Footprint:</strong> <br>
+                    <span id="footprintVal" style="font-size: 1.4rem; color: var(--primary-dark); font-weight: bold;">0</span> kg CO₂e / day
+                    <p id="footprintMessage" style="font-size: 0.85rem; margin-top: 5px;"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>CSS Capabilities Active</h3>
+                <ul style="padding-left: 20px; font-size: 0.9rem; line-height: 1.8;">
+                    <li>Flexbox & Grid Layouts</li>
+                    <li>Custom CSS Variables</li>
+                    <li>Box Shadows & Transitions</li>
+                    <li>Pseudo-classes (<code>:hover</code>, <code>:nth-child</code>)</li>
+                    <li>Pseudo-elements (<code>::before</code>, <code>::after</code>)</li>
+                    <li>Responsive Media Queries</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Useful Links</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 8px;"><a href="https://www.un.org/sustainabledevelopment/" target="_blank" style="color: var(--primary-color); text-decoration: none;">🌐 UN Sustainable Goals</a></li>
+                    <li style="margin-bottom: 8px;"><a href="https://www.epa.gov" target="_blank" style="color: var(--primary-color); text-decoration: none;">🏛 Environmental Protection Agency</a></li>
+                </ul>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <div id="customModal" class="modal-overlay">
+        <div class="modal-content">
+            <h3 id="modalTitle">Notification</h3>
+            <p id="modalBody" style="margin: 15px 0;"></p>
+            <button class="btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="header-container" style="justify-content: center; flex-direction: column; gap: 5px;">
+            <p>&copy; 2026 Student Eco-Hub  </p>
+            <p style="font-size: 0.85rem; color: var(--accent-color);"></p>
+        </div>
+    </footer>
+
+   
+    <script src="ecohub_portal.js" ></script>
+</body>
+</html>
